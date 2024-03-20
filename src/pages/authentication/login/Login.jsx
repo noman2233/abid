@@ -18,7 +18,7 @@ const Login = () => {
         <button className="login_button">Signup</button>
         <div className="already_have">
           Already have an Account? 
-          <Link>
+          <Link to="/login">
             <span>Login</span>
           </Link>
         </div>
