@@ -8,6 +8,8 @@
   border: 1px solid grey;
   margin: 20px 0px;
   font-family: "inter";
+  display: flex;
+  align-items: center;
 }
 .login_icon{
     color: grey;

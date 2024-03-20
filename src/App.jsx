@@ -3,7 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import AdminPortal from "./pages/AdminPortal";
 import CustomerLogin from "./pages/CustomerLogin";
-import Login from "./pages/login/Login";
+import Login from "./pages/authentication/login/Login";
+import Signup from "./pages/authentication/signup/Signup";
+import ForgotPassword from "./pages/authentication/forgotPassword/ForgotPassword";
+ 
 
 function App() {
   return (
@@ -11,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/admin" element={<AdminPortal />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
