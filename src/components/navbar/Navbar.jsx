@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import "./navbar.css"
+import MenuIcon from "@mui/icons-material/Menu";
+import SideBar from '../sidebar/Sidebar';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1010) {
+      if (window.innerWidth < 650) {
         setIsOpen(true);
       } else {
         setIsOpen(false);
@@ -15,6 +19,7 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
+    
     <div className='navbar'>
       <img src="./images/logo.png" alt="" className="logo_navbar" />
       <ul className='navbar_ul'>
@@ -26,6 +31,13 @@ const Navbar = () => {
         <button className='button_1'>SignIn</button>
         <button className='button_2'>Get Started</button>
       </div>
+      {isOpen && (
+        <MenuIcon
+          onClick={() => setOpenSidebar(!openSidebar)}
+          className="menu_item"
+        />
+      )}
+      {openSidebar && <SideBar />}
     </div>
   )
 }
