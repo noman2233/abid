@@ -1,0 +1,46 @@
+.form_component_container{
+width: 100vw;
+
+}
+.form_component{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+
+}
+
+.form_component h1{
+    font-family: 'Inter';
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+.actual_form{
+width: 70%;
+background-color: #FFFEEC;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+padding: 15px 0px;
+ 
+
+}
+.submit_form{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    padding: 15px 30px;
+    width: 300px;
+    border-radius: 30px;
+    border: 1px solid rgb(172, 170, 170);
+    margin: 20px 0px;
+    background-color: #FFFEEC;
+    font-size: 20px;
+
+
+}

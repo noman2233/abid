@@ -9,13 +9,14 @@ import ForgotPassword from "./pages/authentication/forgotPassword/ForgotPassword
 import NewPassword from "./pages/authentication/newPassword/NewPassword";
 import OTP from "./pages/authentication/otp/OTP";
 import Success from "./pages/authentication/success/Success";
+import Home from "./pages/home/Home";
  
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Signup />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
