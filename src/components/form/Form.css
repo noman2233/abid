@@ -39,28 +39,22 @@
   font-size: 20px;
 }
 
-
-@media screen and (max-width:1400px){
-    .form_component {
-        width: 90% !important;
-        
-    }
-    .form_input_compo {
-        width: 40% !important;
-        display: flex;
-        gap: 20px;
-       
-    }
-    .actual_form {
-        width: 100%;
-       
-    }
+@media screen and (max-width: 1400px) {
+  .form_component {
+    width: 90% !important;
+  }
+  .form_input_compo {
+    width: 40% !important;
+    display: flex;
+    gap: 20px;
+  }
+  .actual_form {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:500px) {
-    .form_input_compo {
-        width: 35% !important;
-     
-    }
-    
+@media screen and (max-width: 500px) {
+  .form_input_compo {
+    width: 35% !important;
+  }
 }
